@@ -33,7 +33,7 @@ as $$
 begin
     for i in 1 .. (length(p_str) -1)
 	loop
-	    if substring(p_str, i, 1) = substring(p_str, 1+1, i)
+	    if substring(p_str, i, 1) = substring(p_str, i+1, 1)
 		then
 		    return true;  -- the characters are adjacent
 		end if;
